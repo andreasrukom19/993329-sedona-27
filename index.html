@@ -11,10 +11,10 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-            <li class="cell-left"><a href="info.html">Информация</a></li>
-            <li class="cell-left"><a href="media.html">Фото и видео</a></li>
-            <li class="cell-right"><a href="map.html">Карта штата</a></li>
-            <li class="cell-right"><a href="hotels.html">Гостиницы</a></li>
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="photo-video.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -82,12 +82,49 @@
         </ul>
       </section>
 
-      <section class="search">
-        <h2>Заинтересовались?</h2>
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Поиск гостиниц и карта города Седона</h2>
+        <p>
+          <b>Заинтересовались?</b>
+        </p>
         <p>Укажите предполагаемые даты поездки, 
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <!-- здесь должна быть форма -->
+        <div class="button-form">
+          <button type="button" name="hotel-search">Поиск гостиницы в Седоне</button>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+              <label for="date-check-in">Дата заезда:</label>
+              <input id="date-check-in" type="text" name="date" placeholder="8 февраля 2020">
+              <button class="calendar-btn" type="button" aria-label="Дата заезда">
+                <img src="img/icons/calendar.svg" width="21" height="22">
+              </button>
+            </p>
+            <p>
+              <label for="date-check-out">Дата выезда:</label>
+              <input id="date-check-out" type="text" name="date" placeholder="5 марта 2020">
+              <button class="calendar-btn" type="button" aria-label="Дата выезда">
+                <img src="img/icons/calendar.svg" width="21" height="22">
+              </button>
+            </p>
+            <p class="adult">
+              <label for="adult-number">Взрослые:</label>
+              <span>
+                <button class="plus-minus" type="button" aria-label="Минус">-</button>
+                <input id="adult-number" type="text" name="adult" placeholder="2">
+                <button class="plus-minus" type="button" aria-label="Плюс">+</button>
+              </span>
+            </p>
+            <p class="child">
+              <label for="child-number">Дети</label>
+              <span>
+                <button class="plus-minus" type="button" aria-label="Минус">-</button>
+                <input id="child-number" type="text" name="child" placeholder="0">
+                <button class="plus-minus" type="button" aria-label="Плюс">+</button>
+              </span>
+            </p>
+            <button class="search-btn" type="submit">Найти</button>
+          </form>
+        </div>
         <p class="map">
           <img src="img/map.png" alt="Карта штата Аризона" width="100%" height="475">
         </p>
