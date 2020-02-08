@@ -23,6 +23,67 @@
     <main class="container">
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
 
+      <section>
+        <h2 class="visually-hidden">Форма поиска жилья</h2>
+        <form class="housing-search" action="htpps://echo.htmlacademy.ru" method="POST">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul class="infrastructure-option">
+              <li class="filter-option">
+                <input id="pool" type="checkbox" name="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input id="parking" type="checkbox" name="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input id="wifi" type="checkbox" name="wifi">
+                <label for="wifi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul class="housing-type">
+              <li class="filter-option">
+                <input id="hotel" type="checkbox" name="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input id="motel" type="checkbox" name="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input id="apartments" type="checkbox" name="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="price-range">
+              <label>
+                От
+                <input type="text" name="min" value="0">
+              </label>
+              <label>
+                До
+                <input type="text" name="max" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="slider slider-min"></div>
+              <div class="slider slider-max"></div>
+            </div>
+            <button class="show-btn" type="submit">Показать</button>
+          </fieldset>
+        </form>
+      </section>
+
       <section class="filters-results">
         <h2>Сортировка</h2>
         <p>Найдено: 3</p>
