@@ -96,6 +96,106 @@ a {
     color: #333333;
 }
 
+.advantages-list,
+.service-list {
+    line-height: 21px;
+
+    list-style: none;
+}
+
+.block1 {
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.block1 h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.block1 p {
+    color: #ffffff;
+}
+
+.service-list {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.service-list p {
+    color: #333333;
+}
+
+.service-item h4 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.service-item .house::before {
+    content: "";
+    display: block;
+
+    width: 75px;
+    height: 72px;
+
+    background-image: url("../img/icon-1.svg");
+}
+
+.service-item .food::before {
+    content: "";
+    display: block;
+
+    width: 74px;
+    height: 70px;
+
+    background-image: url("../img/icon-3.svg");
+}
+
+.service-item .souvenir::before {
+    content: "";
+    display: block;
+
+    width: 64px;
+    height: 76px;
+
+    background-image: url("../img/icon-2.svg");
+}
+
+.block2 {
+    color: #ffffff;
+    text-align: center;
+
+    background-color: #81b3d2;
+}
+
+.block2 h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.block2 p {
+    color: #ffffff;
+}
+
+.other {
+    text-align: center;
+
+    background-color: #eeeeee;
+}
+
+.other h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.other p,
+.other span {
+    color: #333333;
+}
+
 p.interest {
     font-size: 30px;
     line-height: 36px;
