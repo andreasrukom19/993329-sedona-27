@@ -20,6 +20,9 @@ a {
     text-decoration: none;
 }
 
+.main-header span {
+    font-size: 0;
+}
 
 .main-navigation {
     margin: 0 auto;
