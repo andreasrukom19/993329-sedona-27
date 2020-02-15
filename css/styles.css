@@ -84,15 +84,27 @@ a {
 .container h1 {
     font-size: 21px;
     font-weight: bold;
+    text-align: center;
 }
 
-.interest b {
+.container p {
+    color: #333333;
+}
+
+.intro {
+    text-align: center;
+    color: #333333;
+}
+
+p.interest {
     font-size: 30px;
     line-height: 36px;
+    text-align: center;
     color: #000000;
 }
 
 .best-offers {
+    text-align: center;
     line-height: 24px;
 }
 
