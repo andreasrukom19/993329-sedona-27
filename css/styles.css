@@ -320,3 +320,24 @@ p.interest {
 .social-button:active {
     background-color: #5496bd;
 }
+
+.copyright {
+    display: inline-block;
+    width: 115px;
+    height: 41px;
+
+    font-size: 0;
+    vertical-align: middle;
+
+    background-image: url("../img/logo-name-black.png");
+    background-repeat: no-repeat;
+}
+
+.copyright:hover,
+.copyright:focus {
+    background-image: url("../img/logo-name-hover.png");
+}
+
+.copyright:active {
+    background-image: url("../img/logo-name-active.png");
+}
