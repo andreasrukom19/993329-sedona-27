@@ -71,7 +71,7 @@ a {
 
 }
 
-.container::before {
+.main-container::before {
     content: "";
     display: block;
     width: 1203px;
@@ -79,6 +79,11 @@ a {
 
     background-color: #999999;
     background-image: url("../img/polygon.png");
+}
+
+.container h1 {
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .interest b {
