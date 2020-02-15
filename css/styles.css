@@ -59,35 +59,19 @@ a {
     color: #766357;
 }
 
-.special-header::before {
+.special-header::after {
     content: "";
     display: block;
     width: 1200px;
     height: 800px;
-    
-    background-color: #e5f1f9;
-    background-image: url("../img/photo-sedona.jpg");
+
+    background-image: url("../img/welcome.png"),
+                      url("../img/photo-sedona.jpg");
     background-repeat: no-repeat;
+
 }
 
-.special-header::after {
-    content: "";
-    display: block;
-    width: 459px;
-    height: 353px;
-
-    background-color: #999999;
-    background-image: url("../img/welcome.png");
-    background-repeat: no-repeat;
-}
-
-.page-title {
-    width: 1200px;
-    height: 216px;
-    text-align: center;
-}
-
-.page-title::before {
+.container::before {
     content: "";
     display: block;
     width: 1203px;
