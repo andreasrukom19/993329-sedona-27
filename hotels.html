@@ -34,15 +34,15 @@
               <legend>Инфраструктура:</legend>
               <ul class="infrastructure-option">
                 <li class="filter-option">
-                  <input id="pool" type="checkbox" name="pool" checked>
+                  <input class="visually-hidden filter-input" id="pool" type="checkbox" name="pool" checked>
                   <label for="pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <input id="parking" type="checkbox" name="parking">
+                  <input class="visually-hidden filter-input" id="parking" type="checkbox" name="parking">
                   <label for="parking">Парковка</label>
                 </li>
                 <li class="filter-option">
-                  <input id="wifi" type="checkbox" name="wifi">
+                  <input class="visually-hidden filter-input" id="wifi" type="checkbox" name="wifi">
                   <label for="wifi">wi-fi</label>
                 </li>
               </ul>
@@ -51,15 +51,15 @@
               <legend>Тип жилья:</legend>
               <ul class="housing-type">
                 <li class="filter-option">
-                  <input id="hotel" type="checkbox" name="hotel" checked>
+                  <input class="visually-hidden filter-input" id="hotel" type="checkbox" name="hotel" checked>
                   <label for="hotel">Гостиница</label>
                 </li>
                 <li class="filter-option">
-                  <input id="motel" type="checkbox" name="motel" checked>
+                  <input class="visually-hidden filter-input" id="motel" type="checkbox" name="motel" checked>
                   <label for="motel">Мотель</label>
                 </li>
                 <li class="filter-option">
-                  <input id="apartments" type="checkbox" name="apartments" checked>
+                  <input class="visually-hidden filter-input" id="apartments" type="checkbox" name="apartments" checked>
                   <label for="apartments">Апартаменты</label>
                 </li>
               </ul>
@@ -83,33 +83,35 @@
                 <div class="slider slider-min"></div>
                 <div class="slider slider-max"></div>
               </div>
-              <button class="show-btn" type="submit">Показать</button>
+              <button class="show-button" type="submit">Показать</button>
             </fieldset>
           </form>
         </section>
 
         <section class="filters-results">
-          <h2>Сортировка</h2>
-          <p>Найдено: 3</p>
-          <ul class="sorting">
-            <li class="sorting-item-current">
-              <a>По цене</a>
-            </li>
+          <div class="filters-block1">
+            <h2>Сортировка:</h2>
+            <p class="result">Найдено: 3</p>
+            <ul class="sorting">
+              <li class="sorting-item-current">
+                <a>По цене</a>
+              </li>
+              <li>
+                <a class="sorting-item" href="#">По типу</a>
+              </li>
+              <li>
+                <a class="sorting-item" href="#">По рейтингу</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="increase-decrease">
             <li>
-              <a class="sorting-item" href="#">По типу</a>
-            </li>
-            <li>
-              <a class="sorting-item" href="#">По рейтингу</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a class="up" href="#">
+              <a class="increase" href="#">
                 <span class="visually-hidden">По возрастанию</span>
               </a>
             </li>
             <li>
-              <a class="down">
+              <a class="decrease">
                 <span class="visually-hidden">По убыванию</span>
               </a>
             </li>
@@ -202,19 +204,13 @@
         </p>
         <ul class="footer-social">
           <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
+            <a class="social-button twitter" href="#">Twitter</a>
           </li>
           <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
+            <a class="social-button facebook" href="#">Facebook</a>
           </li>
           <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Youtube</span>
-            </a>
+            <a class="social-button youtube" href="#">Youtube</a>
           </li>
         </ul>
         <p class="footer-copyright">
