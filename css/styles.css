@@ -33,15 +33,34 @@ a {
     background-color: #ffffff;
 }
 
-.logo {
-    display: block;
+.main-header-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
     margin: 0 auto;
     width: 140px;
-    height: 70px;
+    height: 71px;
 }
 
 .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+
     list-style: none;
+}
+
+.site-navigation li {
+    width: 239px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+
+    text-align: center;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-left: auto;
 }
 
 .site-navigation a {
