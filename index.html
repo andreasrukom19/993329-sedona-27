@@ -24,20 +24,24 @@
       </header>
 
       <main class="container main-container">
-        <h1>Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
-        <p class="intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="page-title">
+          <h1>Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+          <p class="intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества в городе Седона</h2>
           <ul class="advantages-list">
             <li class="advantage-item block1">
-              <div class="real-city">
-                <h3>Настоящий городок</h3>
-                <span>&mdash; №1 &mdash;</span>
-                <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              </div>
-              <div class="real-city-image">
-                <img src="img/real-city.jpg" alt="Настоящий городок" width="800" height="260">
+              <div class="real-city-container">
+                <div class="real-city">
+                  <h3>Настоящий городок</h3>
+                  <span>&mdash; №1 &mdash;</span>
+                  <p>Седона &mdash; не аттракцион для туристов,<br> там течет своя жизнь</p>
+                </div>
+                <div class="real-city-image">
+                  <img src="img/real-city.jpg" alt="Настоящий городок">
+                </div>
               </div>
               <ul class="service-list">
                 <li class="service-item">
@@ -55,29 +59,31 @@
               </ul>
             </li>
             <li class="advantage-item block2">
-              <div class="devil-bridge">
-                <h3>Там есть мост дьявола</h3>
-                <span>&mdash; №2 &mdash;</span>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>
-              <div class="devil-bridge-image">
-                <img src="img/devil-bridge.jpg" alt="Мост дьявола" width="800" height="260">
+              <div class="devil-bridge-block">
+                <div class="devil-bridge">
+                  <h3>Там есть<br> мост дьявола</h3>
+                  <span>&mdash; №2 &mdash;</span>
+                  <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+                </div>
+                <div class="devil-bridge-image">
+                  <img src="img/devil-bridge.jpg" alt="Мост дьявола" width="800" height="260">
+                </div>
               </div>
             </li>
             <li class="advantage-item other">
-              <h3>Небольшая площадь</h3>
+              <h3>Небольшая<br> площадь</h3>
               <span>&mdash; №3 &mdash;</span>
-              <p>Все достопримечательности находятся очень близко</p>
+              <p>Все достопримечательности<br> находятся очень близко</p>
             </li>
             <li class="advantage-item other">
-              <h3>Красивая дорога</h3>
+              <h3>Красивая<br> дорога</h3>
               <span>&mdash; №4 &mdash;</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
             </li>
             <li class="advantage-item other">
-              <h3>Мало туристов</h3>
+              <h3>Мало<br> туристов</h3>
               <span>&mdash; №5 &mdash;</span>
-              <p>Большинство едет в Гранд-Каньон и толпится там</p>
+              <p class="grand-canyon">Большинство едет в Гранд-Каньон<br> и толпится там</p>
             </li>
           </ul>
         </section>
@@ -121,31 +127,35 @@
             </form>
           </div>
           <p class="map">
-            <img src="img/map.png" alt="Карта штата Аризона" width="100%" height="475">
+            <img src="img/map.png" alt="Карта штата Аризона" width="100%" height="594">
           </p>
         </section>
       </main>
 
-      <footer class="main-footer">
-        <p class="footer-feedback">
-          <span class="hashtag">#visitsedona</span><br>
-          тел: +7(495) 666-02-66
-        </p>
-        <ul class="footer-social">
-          <li>
-            <a class="social-button twitter" href="#">Twitter</a>
-          </li>
-          <li>
-            <a class="social-button facebook" href="#">Facebook</a>
-          </li>
-          <li>
-            <a class="social-button youtube" href="#">Youtube</a>
-          </li>
-        </ul>
-        <p class="footer-copyright">
+      <footer class="main-footer main-footer-index">
+        <div class="footer-feedback">
+          <p>
+            <span class="hashtag">#visitsedona</span><br>
+            тел: +7(495) 666-02-66
+          </p>
+        </div>
+        <div class="footer-social-block">
+          <ul class="footer-social">
+            <li>
+              <a class="social-button twitter" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="social-button facebook" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="social-button youtube" href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
           <span>website be</span>
           <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
-        </p>
+        </div>
       </footer>
     </div>
   </body>
