@@ -10,6 +10,7 @@ body {
 }
 
 .wrapper {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
 
@@ -20,8 +21,29 @@ a {
     text-decoration: none;
 }
 
-.main-header span {
-    font-size: 0;
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+}
+
+.special-header::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 717px;
+
+    background-image: url("../img/welcome.png"),
+                      url("../img/photo-sedona.jpg");
+    background-repeat: no-repeat;
+    background-position: 370px 77px, 0 -83px;
 }
 
 .main-navigation {
@@ -29,8 +51,6 @@ a {
     padding: 0;
 
     color: #000000;
-
-    background-color: #ffffff;
 }
 
 .main-header-logo {
@@ -49,6 +69,8 @@ a {
     padding: 0;
 
     list-style: none;
+
+    background-color: #ffffff;
 }
 
 .site-navigation li {
@@ -59,8 +81,8 @@ a {
     text-align: center;
 }
 
-.site-navigation li:nth-child(3) {
-    margin-left: auto;
+.site-navigation li:nth-child(2) {
+    margin-right: auto;
 }
 
 .site-navigation a {
@@ -81,29 +103,31 @@ a {
     color: #766357;
 }
 
-.special-header::after {
-    content: "";
-    display: block;
-    width: 1200px;
-    height: 800px;
-
-    background-image: url("../img/welcome.png"),
-                      url("../img/photo-sedona.jpg");
-    background-repeat: no-repeat;
-
-}
-
 .main-container::before {
     content: "";
-    display: block;
-    width: 1203px;
-    height: 59px;
+    position: absolute;
+    top: 507px;
+    left: -1px;
 
-    background-color: #999999;
+    width: 1201px;
+    height: 57px;
     background-image: url("../img/polygon.png");
 }
 
-.container h1 {
+.page-title {
+    position: absolute;
+    top: 564px;
+    padding-top: 45px;
+    padding-bottom: 36px;
+
+    width: 1200px;
+
+    background-color: #ffffff;
+}
+
+.page-title h1 {
+    margin-bottom: 28px;
+
     font-size: 21px;
     font-weight: bold;
     text-align: center;
@@ -118,10 +142,17 @@ a {
     color: #333333;
 }
 
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .advantages-list,
 .service-list {
-    line-height: 21px;
+    margin: 0;
+    padding: 0;
 
+    line-height: 21px;
     list-style: none;
 }
 
@@ -133,15 +164,42 @@ a {
 }
 
 .block1 h3 {
+    padding-left: 55px;
+    padding-right: 55px;
+
     font-size: 21px;
     font-weight: bold;
+    text-align: center;
 }
 
 .block1 p {
     color: #ffffff;
 }
 
+.real-city-container {
+    display: flex;
+}
+
+.real-city {
+    padding-top: 32px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.real-city p {
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+.real-city-image img {
+    display: block;
+}
+
 .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     color: #000000;
 
     background-color: #ffffff;
@@ -151,42 +209,66 @@ a {
     color: #333333;
 }
 
+.service-item {
+    box-sizing: border-box;
+    max-width: 400px;
+    padding: 131px 48px 65px;
+}
+
 .service-item h4 {
+    position: relative;
     font-size: 21px;
     font-weight: bold;
 }
 
 .service-item .house::before {
     content: "";
-    display: block;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 
     width: 75px;
     height: 72px;
 
     background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
 }
 
 .service-item .food::before {
     content: "";
-    display: block;
-
+    
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    
     width: 74px;
     height: 70px;
 
     background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
 }
 
 .service-item .souvenir::before {
     content: "";
-    display: block;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 
     width: 64px;
     height: 76px;
 
     background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
 }
 
 .block2 {
+    flex-basis: 100%;
+
     color: #ffffff;
     text-align: center;
 
@@ -199,16 +281,40 @@ a {
 }
 
 .block2 p {
+    /* margin: 0 auto; */
+    margin-top: 20px;
+
     color: #ffffff;
 }
 
+.devil-bridge-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.devil-bridge {
+    padding: 25px 48px 9px;
+}
+
+.devil-bridge-image img {
+    display: block;
+}
+
 .other {
+    flex-basis: 400px;
+    flex-wrap: wrap;
+    padding: 26px 0 45px;
+
     text-align: center;
 
     background-color: #eeeeee;
 }
 
 .other h3 {
+    margin-bottom: 24px;
+
     font-size: 21px;
     font-weight: bold;
 }
@@ -216,6 +322,14 @@ a {
 .other p,
 .other span {
     color: #333333;
+}
+
+.other p {
+    margin-top: 21px;
+}
+
+.hotel-search {
+    text-align: center;
 }
 
 p.interest {
@@ -659,12 +773,54 @@ p.interest {
     background-color: #503e33;
 }
 
+.map {
+    margin: 0;
+}
+
+.main-footer {
+    display: flex;
+
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+.main-footer-index {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
 .footer-feedback {
+    flex-basis: 400px;
+    display: flex;
+    justify-content: center;
+
     font-size: 21px;
     font-weight: 700;
 }
 
+.footer-feedback p {
+    align-self: center;
+}
+
+.footer-social-block {
+    flex-basis: 400px;
+    display: flex;
+    justify-content: center;
+}
+
 .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -699,6 +855,9 @@ p.interest {
 }
 
 .facebook {
+    margin-left: 6px;
+    margin-right: 6px;
+
     width: 47px;
     height: 48px;
 
@@ -724,8 +883,20 @@ p.interest {
     background-image: url("../img/youtube-active.png");
 }
 
+.footer-copyright {
+    flex-basis: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright span {
+    display: block;
+    margin-right: 8px;
+}
+
 .copyright {
-    display: inline-block;
+    display: block;
     width: 115px;
     height: 41px;
 
