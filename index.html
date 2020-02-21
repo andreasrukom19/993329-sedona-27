@@ -109,22 +109,24 @@
                   <button class="calendar-btn" type="button" aria-label="Дата выезда"></button>
                 </p>
               </div>
-              <p class="adult">
-                <label for="adult-number">Взрослые:</label>
-                <span>
-                  <button class="plus-minus" type="button" aria-label="Минус">&minus;</button>
-                  <input id="adult-number" type="text" name="adult" placeholder="2">
-                  <button class="plus-minus" type="button" aria-label="Плюс">+</button>
-                </span>
-              </p>
-              <p class="child">
-                <label for="child-number">Дети</label>
-                <span>
-                  <button class="plus-minus" type="button" aria-label="Минус">&minus;</button>
-                  <input id="child-number" type="text" name="child" placeholder="0">
-                  <button class="plus-minus" type="button" aria-label="Плюс">+</button>
-                </span>
-              </p>
+              <div class="adult-child">
+                <p class="adult">
+                  <label for="adult-number">Взрослые:</label>
+                  <span class="adult-block">
+                    <button class="plus-minus" type="button" aria-label="Минус">&minus;</button>
+                    <input id="adult-number" type="text" name="adult" placeholder="2">
+                    <button class="plus-minus" type="button" aria-label="Плюс">+</button>
+                  </span>
+                </p>
+                <p class="child">
+                  <label class="child-label" for="child-number">Дети:</label>
+                  <span class="child-block">
+                    <button class="plus-minus" type="button" aria-label="Минус">&minus;</button>
+                    <input id="child-number" type="text" name="child" placeholder="0">
+                    <button class="plus-minus" type="button" aria-label="Плюс">+</button>
+                  </span>
+                </p>
+              </div>
               <button class="search-btn" type="submit">Найти</button>
             </form>
           </div>
