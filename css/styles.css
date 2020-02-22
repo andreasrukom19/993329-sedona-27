@@ -898,7 +898,7 @@ p.interest {
 .catalog-item {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 72px;
+    /* padding: 30px 72px; */
 
     text-align: left;
 
@@ -909,6 +909,12 @@ p.interest {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.catalog-item-image {
+    margin-top: 30px;
+    margin-left: 72px;
+    margin-bottom: 30px;
+}
+
 .catalog-item-image img {
     display: block;
 }
@@ -916,22 +922,25 @@ p.interest {
 .hotel-name-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+    /* justify-content: space-between; */
+    /* margin: 0; */
+    margin-top: 24px;
     margin-left: 30px;
-    padding: 0;
+    /* padding: 0; */
 }
 
 .hotel-name {
     margin: 0;
     padding: 0;
-    padding-bottom: 5px;
+    margin-bottom: 3px;
+    /* padding-bottom: 5px; */
 
-    line-height: 15px;
+    /* line-height: 15px; */
 }
 
 .hotel-name a {
     display: block;
+
     font-size: 21px;
     font-weight: 700;
     color: #000000;
@@ -952,19 +961,28 @@ p.interest {
 }
 
 .description {
+    margin: 0;
+    padding: 0;
+    margin-left: -2px;
+    margin-bottom: 10px;
+
     color: #333333;
 }
 
 .description td {
-    width: 110px;
+    width: 115px;
+    margin: 0;
+    padding: 0;
 }
 
 .hotels-button {
     display: flex;
+    
 }
 
 .hotels-button a {
-    padding: 0 17px;
+    padding: 3px 17px;
+    line-height: 21px;
 }
 
 .details {
@@ -1007,9 +1025,11 @@ p.interest {
 
 .rating-stars {
     margin-left: auto;
+    margin-top: 30px;
+    margin-right: 72px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .stars-block {
@@ -1031,6 +1051,8 @@ p.interest {
 }
 
 .rating {
+    margin-top: auto;
+    margin-bottom: 30px;
     padding: 0 15px;
 
     color: #666666;
