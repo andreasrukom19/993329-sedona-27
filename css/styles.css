@@ -546,9 +546,9 @@ p.interest {
 
 .housing-search {
     display: flex;
-    padding-top: 28px;
+    padding-top: 26px;
     padding-right: 0;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     padding-left: 0;
     box-sizing: border-box;
 
@@ -558,10 +558,13 @@ p.interest {
     background-color: #81b3d2;
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -280px;
+    background-position: 0 -290px;
 }
 
 .housing-search fieldset {
+    margin: 0;
+    padding: 0;
+
     border: none;
 }
 
@@ -571,16 +574,49 @@ p.interest {
     text-align: left;
 }
 
-.catalog-list {
-    list-style: none;
+.filter-input {
+    opacity: 0;
+}
+
+.infrastructure-block {
+    margin-left: 72px;
+}
+
+.housing-type-block {
+    margin-left: 115px;
+}
+
+.price-block {
+    margin-left: auto;
+    margin-right: 72px;
+}
+
+.price-block legend {
+    margin-bottom: 12px;
 }
 
 .infrastructure-option,
 .housing-type {
+    margin: 0;
+    padding: 0;
+
+    line-height: 21px;
+
     list-style: none;
 }
 
+.infrastructure-option li:first-child,
+.housing-type li:first-child {
+    margin-top: 25px;
+}
+
+.filter-option {
+    margin-bottom: 25px;
+    margin-left: 42px;
+}
+
 .filter-option label {
+    position: relative;
     display: block;
 
     font-weight: normal;
@@ -589,6 +625,8 @@ p.interest {
 .filter-input[checked] + label::before {
     content: "";
     display: block;
+    position: absolute;
+    left: -42px;
 
     width: 27px;
     height: 23px;
@@ -600,6 +638,8 @@ p.interest {
 .filter-input:not([checked]) + label::before {
     content: "";
     display: block;
+    position: absolute;
+    left: -42px;
 
     width: 23px;
     height: 23px;
@@ -609,6 +649,9 @@ p.interest {
 }
 
 .price-range {
+    position: relative;
+
+    display: flex;
     margin-bottom: 20px;
 
     width: 314px;
@@ -622,19 +665,37 @@ p.interest {
 
 .price-range::after {
     content: "";
-    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
     width: 2px;
     height: 22px;
 
     background-color: #ffffff;
+    transform: translate(-50%, -50%);
 }
 
 .price-range label {
+    box-sizing: border-box;
+    align-self: center;
+
     font-size: 14px;
     font-weight: normal;
-    vertical-align: top;
-    text-align: center;
+    vertical-align: middle;
+}
+
+.price-range label:first-child {
+    margin-left: 65px;
+}
+
+.price-range label:last-child {
+    margin-left: auto;
+    margin-right: 27px;
+}
+
+.price-range span {
+    align-self: center;
 }
 
 .price-range input {
@@ -663,10 +724,29 @@ p.interest {
 }
 
 .range-controls .bar {
-    width: 248px;
+    width: 80%;
     height: 2px;
 
     background-color: #ffffff;
+}
+
+.slider {
+    position: absolute;
+    top: -9px;
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+
+    background-image: url("../img/filter-button.png");
+}
+
+.slider:hover,
+.slider:focus {
+    transform: scale(1.1);
+}
+
+.slider-max {
+    left: 252px;
 }
 
 .show-button {
@@ -775,6 +855,12 @@ p.interest {
     margin-left: 12px;
 }
 
+.increase-decrease a {
+    display: block;
+    width: 11px;
+    height: 10px;
+}
+
 .increase {
     background-image: url("../img/icon-up-dir.png");
     background-repeat: no-repeat;
@@ -794,7 +880,23 @@ p.interest {
     background-repeat: no-repeat;
 }
 
+.catalog-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    background-color: greenyellow;
+    list-style: none;
+}
+
+
 .catalog-item {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding: 30px 72px;
+
     text-align: left;
 
     border-top: 1px solid #e5e5e5;
@@ -804,7 +906,39 @@ p.interest {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.catalog-item-image {
+    background-color: dodgerblue;
+}
+
+.catalog-item-image img {
+    display: block;
+}
+
+.hotel-name-block {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 0;
+    padding: 0;
+
+    background-color: fuchsia;
+}
+
+.hotels-button {
+    background-color: gold;
+}
+
+.hotel-name {
+    margin: 0;
+    padding: 0;
+
+    background-color: green;
+}
+
 .hotel-name a {
+    display: block;
+    margin: 0;
+    padding: ;
     font-size: 21px;
     font-weight: 700;
     color: #000000;
@@ -832,6 +966,8 @@ p.interest {
 
 .description {
     color: #333333;
+
+    background-color: firebrick;
 }
 
 .details {
