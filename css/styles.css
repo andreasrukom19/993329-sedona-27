@@ -886,7 +886,6 @@ p.interest {
     margin: 0;
     padding: 0;
 
-    background-color: greenyellow;
     list-style: none;
 }
 
@@ -894,7 +893,6 @@ p.interest {
 .catalog-item {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     padding: 30px 72px;
 
     text-align: left;
@@ -906,10 +904,6 @@ p.interest {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.catalog-item-image {
-    background-color: dodgerblue;
-}
-
 .catalog-item-image img {
     display: block;
 }
@@ -917,28 +911,22 @@ p.interest {
 .hotel-name-block {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin: 0;
+    margin-left: 30px;
     padding: 0;
-
-    background-color: fuchsia;
-}
-
-.hotels-button {
-    background-color: gold;
 }
 
 .hotel-name {
     margin: 0;
     padding: 0;
+    padding-bottom: 5px;
 
-    background-color: green;
+    line-height: 15px;
 }
 
 .hotel-name a {
     display: block;
-    margin: 0;
-    padding: ;
     font-size: 21px;
     font-weight: 700;
     color: #000000;
@@ -958,19 +946,25 @@ p.interest {
     text-align: left;
 }
 
-.rating {
-    color: #666666;
-
-    background-color: #f2f2f2;
-}
-
 .description {
     color: #333333;
+}
 
-    background-color: firebrick;
+.description td {
+    width: 110px;
+}
+
+.hotels-button {
+    display: flex;
+}
+
+.hotels-button a {
+    padding: 0 17px;
 }
 
 .details {
+    margin-right: 6px;
+
     font-weight: 700;
     color: #ffffff;
 
@@ -1004,6 +998,39 @@ p.interest {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #503e33;
+}
+
+.rating-stars {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stars-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.stars {
+    margin-right: 6px;
+    width: 18px;
+    height: 17px;
+
+    background-image: url("../img/star.svg");
+    background-repeat: no-repeat;
+}
+
+.rating-stars .stars:last-child {
+    margin-right: 0;
+}
+
+.rating {
+    padding: 0 15px;
+
+    color: #666666;
+
+    background-color: #f2f2f2;
 }
 
 .map {
