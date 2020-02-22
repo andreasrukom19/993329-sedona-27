@@ -579,11 +579,7 @@ p.interest {
     line-height: 21px;
     text-align: left;
 }
-/*
-.filter-input {
-    opacity: 0;
-}
-*/
+
 .infrastructure-block {
     margin-left: 72px;
 }
@@ -1189,7 +1185,6 @@ p.interest {
     height: 41px;
 
     font-size: 0;
-    vertical-align: middle;
 
     background-image: url("../img/logo-name-black.png");
     background-repeat: no-repeat;
