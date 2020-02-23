@@ -2,7 +2,7 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: normal;
     color: #000000;
     text-transform: uppercase;
 
@@ -401,6 +401,7 @@ p.interest {
     color: #000000;
 
     background-color: #ffffff;
+    box-shadow: 3px 5px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .hotel-searching input[type="text"] {
@@ -466,7 +467,7 @@ p.interest {
 
 .adult-child input[type="text"] {
     width: 34px;
-    height: 34px;
+    height: 32px;
 
     text-align: center;
     border: 2px solid transparent;
@@ -483,6 +484,10 @@ p.interest {
     margin-left: auto;
 }
 
+.calendar-btn svg {
+    fill-opacity: 0.3;
+}
+
 .calendar-btn {
     width: 37px;
     height: 38px;
@@ -490,18 +495,19 @@ p.interest {
 
     text-align: center;
 
-    background-image: url("../img/calendar-gray.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #f2f2f2;
     border: none;
 }
 
-.calendar-btn:hover {
-    background-image: url("../img/calendar-black.png");
+.calendar-btn svg:hover,
+.calendar-btn svg:focus {
+    fill: #000000;
+
+    fill-opacity: 1;
 }
 
-.calendar-btn:active {
-    background-image: url("../img/calendar-blue.png");
+.calendar-btn svg:active {
+    fill: #81b3d2;
 }
 
 .plus-minus {
@@ -1105,13 +1111,18 @@ p.interest {
     margin: 0;
     padding: 0;
 
+    text-align: center;
+
     list-style: none;
 }
 
 .social-button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    font-size: 0;
+    width: 46px;
+    height: 48px;
 
     background-color: #81b3d2;
 }
@@ -1125,46 +1136,13 @@ p.interest {
     background-color: #5496bd;
 }
 
-.twitter {
-    width: 46px;
-    height: 48px;
-
-    background-image: url("../img/tw.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.twitter:active {
-    background-image: url("../img/tw-active.png");
+.social-button:active path {
+    opacity: 0.3;
 }
 
 .facebook {
     margin-left: 6px;
     margin-right: 6px;
-
-    width: 47px;
-    height: 48px;
-
-    background-image: url("../img/fb.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.facebook:active {
-    background-image: url("../img/fb-active.png");
-}
-
-.youtube {
-    width: 46px;
-    height: 48px;
-
-    background-image: url("../img/youtube.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.youtube:active {
-    background-image: url("../img/youtube-active.png");
 }
 
 .footer-copyright {
@@ -1185,16 +1163,13 @@ p.interest {
     height: 41px;
 
     font-size: 0;
-
-    background-image: url("../img/logo-name-black.png");
-    background-repeat: no-repeat;
 }
 
-.copyright:hover,
-.copyright:focus {
-    background-image: url("../img/logo-name-hover.png");
+.copyright:hover path,
+.copyright:focus path {
+    fill: #81b3d2;
 }
 
-.copyright:active {
-    background-image: url("../img/logo-name-active.png");
+.copyright:active path {
+    fill: #bdbbbc;
 }
