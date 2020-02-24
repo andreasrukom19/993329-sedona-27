@@ -419,7 +419,8 @@ p.interest {
 
 .hotel-searching input[type="text"]:focus {
     background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+    outline: 2px solid #e5e5e5;
+    outline-offset: -2px;
 }
 
 .check input[type="text"] {
