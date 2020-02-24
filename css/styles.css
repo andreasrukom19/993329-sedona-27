@@ -46,8 +46,8 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     height: 717px;
 
-    background-image: url("../img/welcome.png"),
-                      url("../img/photo-sedona.jpg");
+    background-image: url(../img/welcome.png),
+                      url(../img/photo-sedona.jpg);
     background-repeat: no-repeat;
     background-position: 370px 77px, 0 -83px;
 }
@@ -65,7 +65,7 @@ input[type="radio"].visually-hidden {
     right: 0;
     margin: 0 auto;
     width: 140px;
-    height: 71px;
+    height: 70px;
 }
 
 .site-navigation {
@@ -111,13 +111,19 @@ input[type="radio"].visually-hidden {
 
 .main-container::before {
     content: "";
+    
     position: absolute;
     top: 507px;
-    left: -1px;
+    left: 0;
+    right: 0;
 
-    width: 1201px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
     height: 57px;
-    background-image: url("../img/polygon.png");
+
+    background-image: url(../img/icons/intro-mask.svg);
+    background-repeat: no-repeat;
 }
 
 .page-title {
