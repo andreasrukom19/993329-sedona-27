@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li:nth-child(2) {
-    margin-right: auto;
+    margin-right: 244px;
 }
 
 .site-navigation a {
@@ -210,7 +210,9 @@ input[type="radio"].visually-hidden {
     margin-right: 60px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
+
 
 .real-city span {
     display: block;
@@ -400,8 +402,7 @@ p.interest {
 
 .best-offers {
     margin: 0;
-    margin-top: 24px;
-    margin-bottom: 47px;
+    padding: 25px 0 47px 0;
 
     text-align: center;
     line-height: 24px;
@@ -532,14 +533,16 @@ p.interest {
 
 .check input[type="text"] {
     width: 309px;
-    padding: 8px 0 8px 10px;
+    padding: 10px 0 10px 10px;
+    line-height: 1;
 }
 
 .check p {
     display: flex;
     justify-content: center;
-    margin: 0;
-    margin-bottom: 28px;
+    align-items: center;
+    /* margin: 0; */
+    margin: 0 0 28px;
 }
 
 .check label {
@@ -755,6 +758,10 @@ p.interest {
 
     background-image: url(../img/icons/checkbox-on.svg);
     background-repeat: no-repeat;
+}
+
+.filter-input:focus + label::before {
+    outline: 2px solid #81b3d2;
 }
 
 .filter-input:not(:checked) + label::before {
@@ -1058,6 +1065,7 @@ p.interest {
 
 .hotel-name a {
     display: block;
+    max-width: 630px;
 
     font-size: 21px;
     font-weight: 700;
@@ -1095,7 +1103,7 @@ p.interest {
 
 .hotels-button {
     display: flex;
-    
+    margin-bottom: 31px;
 }
 
 .hotels-button a {
@@ -1156,11 +1164,6 @@ p.interest {
 
 .stars {
     margin-right: 6px;
-    width: 18px;
-    height: 17px;
-
-    background-image: url(../img/star.svg);
-    background-repeat: no-repeat;
 }
 
 .rating-stars .stars:last-child {
