@@ -46,6 +46,7 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     height: 717px;
 
+    background-color: #dfedf6;
     background-image: url(../img/welcome.png),
                       url(../img/photo-sedona.jpg);
     background-repeat: no-repeat;
@@ -222,10 +223,6 @@ input[type="radio"].visually-hidden {
     margin-top: 21px;
 }
 
-.real-city-image img {
-    display: block;
-}
-
 .service-list {
     display: flex;
     flex-wrap: wrap;
@@ -349,10 +346,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
-.devil-bridge-image img {
-    display: block;
-}
-
 .other {
     flex-basis: 400px;
     flex-grow: 0;
@@ -371,6 +364,7 @@ input[type="radio"].visually-hidden {
 
 .other h3 {
     margin-bottom: 24px;
+    padding: 0 130px;
 
     font-size: 21px;
     font-weight: bold;
@@ -383,6 +377,11 @@ input[type="radio"].visually-hidden {
 
 .other p {
     margin-top: 21px;
+    padding: 0 65px;
+}
+
+.other .canyon {
+    padding: 0 75px;
 }
 
 .hotel-search {
@@ -511,8 +510,6 @@ p.interest {
 
 .hotel-searching input[type="text"] {
     font-weight: 700;
-    /* text-transform: uppercase; */
-    /* color: #000000; */
 
     background-color: #f2f2f2;
     border: 2px solid transparent;
@@ -685,14 +682,13 @@ p.interest {
     font-weight: bold;
     color: #ffffff;
 
-    background-color: #81b3d2;
+    background-color: #180a99;
     background-image: url(../img/filter-background.jpg);
     background-repeat: no-repeat;
     background-position: 0 -290px;
 }
 
 .housing-search fieldset {
-    margin: 0;
     padding: 0;
 
     border: none;
@@ -956,7 +952,7 @@ p.interest {
     color: rgba(0, 0, 0, 0.3);
     margin-right: 33px;
 
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 }
 
 .sorting-item:hover,
@@ -1092,7 +1088,7 @@ p.interest {
 }
 
 .description td {
-    width: 115px;
+    width: 114px;
     margin: 0;
     padding: 0;
 }
@@ -1225,13 +1221,8 @@ p.interest {
     color: #000000;
 }
 
-.footer-social-block {
-    flex-basis: 400px;
-    display: flex;
-    justify-content: center;
-}
-
 .footer-social {
+    flex-basis: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
